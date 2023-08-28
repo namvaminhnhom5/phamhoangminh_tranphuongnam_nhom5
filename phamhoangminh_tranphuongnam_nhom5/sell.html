@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bán hàng</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sell.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="#"><img src="images/banner.jpg" height="165px" width="1000px"></a>
+		</header>
+
+		<div class="menu">
+			<div class="block">
+				<a href="index.html">Bộ sưu tập ảnh</a>
+			</div>
+			<div class="block">
+				<a href="resgist.html">Đăng kí</a>
+			</div>
+			<div id="active" class="block">
+				<a href="sell.html">Bán hàng</a>
+			</div>
+		</div>
+		<article>
+			<h1>Bán hàng</h1>
+			<div class="price">
+				<select name="price" id="" onchange="filterProduct(this)">
+					<option value="0">Chọn mức giá</option>
+					<option value="1">Dưới 100</option>
+					<option value="2">Từ 100 đến 500</option>
+					<option value="3">Trên 500</option>
+				</select>
+			</div>
+			<div class="self">
+				<table id="bang">
+					<thead>
+						<tr>
+							<td><input type="checkbox" onchange="checkAll(this)"></td>
+							<th>Hàng hóa</th>
+							<th>Đơn giá</th>
+							<th>Số lượng</th>
+							<th>Thành tiền</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Iphone</td>
+							<td>700</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>SamSung</td>
+							<td>400</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Nokia</td>
+							<td>100</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Sony Xperia</td>
+							<td>450</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Motorola</td>
+							<td>180</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Oppo</td>
+							<td>600</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Bphone</td>
+							<td>90</td>
+							<td><input type="number" value="0" min="0" step="1" disabled></td>
+							<th></th>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="4">Tổng</th>
+							<th id="tongtien"></th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</article>
+		<footer>
+			Trần Phương Nam - Phạm Hoàng Minh
+		</footer>
+	</div>
+	<script src="js/sell.js"></script>
+</body>
+</html>

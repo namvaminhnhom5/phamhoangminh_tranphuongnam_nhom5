@@ -1,0 +1,33 @@
+.self{
+	margin-top: 15px;
+	width: 650px;
+	margin-left: 17%;
+	border: 1px solid #ccc;
+}
+select{
+	 width:20%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 40%;
+}
+table, th,tr, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 8px 25px;
+  text-align: center;
+}
+input[type=number] {
+  width: 40%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}

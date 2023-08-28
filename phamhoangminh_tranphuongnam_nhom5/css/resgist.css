@@ -1,0 +1,77 @@
+.form{
+	width: 600px;
+	border-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	margin-left: 20%;
+}
+form{
+	margin-left: 20px;
+}
+input[type=text],input[type=email] {
+  width: 90%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+select{
+	width: 94%;
+	padding: 8px 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+input[type=submit] {
+  width: 94%;
+  background-color: #7d78d9;
+  color: white;
+  padding: 14px 20px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.inp{
+	width: 90%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+.inp span{
+	margin-right: 15px;
+}
+input[type=submit]:hover {
+  background-color: #493eff;
+}
+input[type=radio],input[type=checkbox] {
+  margin-right: 5px;
+}
+label{
+  font-weight: bold;
+  margin-top: 8px;
+  display: block;
+}
+textarea{
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+	margin-top: 8px;
+  width: 482px;
+}
+.error{
+  font-size: 12px;
+  color: red;
+}

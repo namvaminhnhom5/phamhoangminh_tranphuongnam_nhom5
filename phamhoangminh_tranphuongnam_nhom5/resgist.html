@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng ký</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/resgist.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="#"><img src="images/banner.jpg" height="165px" width="1000px"></a>
+		</header>
+
+		<div class="menu">
+			<div class="block">
+				<a href="index.html">Bộ sưu tập ảnh</a>
+			</div>
+			<div id="active" class="block">
+				<a href="resgist.html">Đăng kí</a>
+			</div>
+			<div class="block">
+				<a href="sell.html">Bán hàng</a>
+			</div>
+		</div>
+
+		<article>
+			<h1>Đăng kí thành viên</h1>
+			<div class="form">
+				<form action="" onsubmit="return KiemTra()">
+					<label for="student">Mã sinh viên: </label>
+					<input type="text" id="student" name="student">
+					<div id="error1" class="error"></div>
+					<br>
+					<label for="name">Họ và tên: </label>
+					<input type="text" name="name" id="name">
+					<div id="error2" class="error"></div>
+					<br>
+					<label for="email">Email: </label>
+					<input type="email" name="email" id="email">
+					<div id="error3" class="error"></div>
+					<br>
+					<label for="gender">Giới tính: </label>
+					<div class="inp">
+						<input type="radio" name="gender"><span>Nam</span>
+						<input type="radio" name="gender"><span>Nữ</span>
+					</div>
+					<div id="error4" class="error"></div>
+					<label for="subject">Sở thích</label>
+					<div class="inp">
+						<input class="sothich" type="checkbox"><span>Đọc sách</span>
+						<input class="sothich" type="checkbox"><span>Du lịch</span>
+						<input class="sothich" type="checkbox"><span>Âm nhạc</span>
+						<input class="sothich" type="checkbox"><span>Ẩm thực</span>
+						<input class="sothich" type="checkbox"><span>Khác</span>
+					</div>
+					<div id="error5" class="error"></div>
+					<label for="national">Quốc tịch</label>
+					<select name="national" id="national">
+						<option value="0">Chọn quốc tịch</option>
+						<option value="1">Việt Nam</option>
+						<option value="2">Thái Lan</option>
+						<option value="3">Lào</option>
+						<option value="4">Trung Quốc</option>
+						<option value="5">Hàn Quốc</option>
+					</select>
+					<div id="error6" class="error"></div>
+					<label for="text">Ghi chú: </label>
+					<textarea name="text" id="" cols="46" rows="5" id="note" maxlength="200" ></textarea>
+					<div id="error7" class="error"></div>
+					<input type="submit" value="Đăng ký">
+				</form>
+			</div>
+		</article>
+
+		<footer>
+			Trần Phương Nam - Phạm Hoàng Minh
+		</footer>
+	</div>
+	<script src="js/resgist.js"></script>
+</body>
+</html>

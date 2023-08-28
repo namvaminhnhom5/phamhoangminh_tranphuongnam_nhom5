@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bộ sưu tập ảnh</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/img.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="#"><img src="images/banner.jpg" height="165px" width="1000px"></a>
+		</header>
+
+		<div class="menu">
+			<div id="active" class="block">
+				<a href="#">Bộ sưu tập ảnh</a>
+			</div>
+			<div class="block">
+				<a href="resgist.html">Đăng kí</a>
+			</div>
+			<div class="block">
+				<a href="sell.html">Bán hàng</a>
+			</div>
+		</div>
+
+		<article>
+			<h1>Bộ sưu tập ảnh</h1>
+			<div class="img-collect">
+				<img id="anh" src="images/anh0.png">
+				<!-- <img src="images/anh2.png" style = "display: none;">
+				<img src="images/anh3.png" style = "display: none;">
+				<img src="images/anh4.png" style = "display: none;"> -->
+				<p id="title">Ảnh <span id="num">1</span> / <span id="demo">5</span></p>
+				<div id="privious" class="go" onclick="prev()">
+					<i class="fas fa-angle-left"></i>
+				</div>
+				<div id="next" class ="go" onclick="next()">
+					<i class="fas fa-angle-right"></i>
+				</div>
+			</div>
+		</article>
+
+		<footer>
+			Trần Phương Nam - Phạm Hoàng Minh		
+		</footer>
+	</div>
+	<script src="js/img.js"></script>
+</body>
+</html>
